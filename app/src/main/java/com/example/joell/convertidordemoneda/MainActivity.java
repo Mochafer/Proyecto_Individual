@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         temperatura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cambiar = Intent(getApplicationContext(), Temperatura.class);
+                Intent cambiar = new Intent(getApplicationContext(), Temperatura.class);
                 startActivity(cambiar);
             }
         });
